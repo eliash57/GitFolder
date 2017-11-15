@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<p id="listing"></p>
+		<script type="text/javascript">
+			
+			var fruits = ['apples' , 'orange' , 'kiwi'];
+			var input = prompt('Add More Fruit');
+
+			document.getElementById('listing').innerHTML = fruits;
+			document.getElementById('listing').innerHTML =( fruits.splice(input) );
+
+			fruits.sort();
+		</script>
+
+
+	</body>
+</html>
