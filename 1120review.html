@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1 id ="display"></h1>
+		<script type="text/javascript">
+			
+			var index = 1;
+			while (index <= 10)
+			{
+				console.log(index);
+				index++
+			}
+			/*
+			var pw = prompt("Enter word with 6 or more characters");
+			while (pw.length < 6){
+			var pw = prompt("HEY MAN with 6 or more characters READ!!!");
+			}
+			document.getElementById('display').innerHTML = pw;
+
+			*/
+			var handbags = ['Gucci' , 'Coach' , 'Prada' , 'MK' , 'KateSpade' , 'Payless'];
+			for(var i = 0; i < handbags.length; i++ )
+				document.getElementById('display').innerHTML += 'I have a ' +handbags[i] + 'bag<br>';
+
+		</script>
+
+	</body>
+</html>

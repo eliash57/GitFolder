@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+			
+		<input type="text" placeholder="Enter a color" id="myColor" onchange="changeBG()">
+
+		<img src="https://www.zoo.org.au/sites/default/files/styles/zv_carousel_large/public/platypus-underwater-animal-profile-web620.jpg?itok=9tMADBfM" width="400px" id="pic" onclick="switchImage()">
+
+	<br>
+
+		<input type="text" placeholder="Enter your name" id="name">
+		<input type="number" placeholder="Age" id="age">
+		<input type="button" value="Create Person" onclick="personButtonClicked()">
+
+		<script type="text/javascript">
+			/*
+			function changeBG(){
+				document.bgColor = document.getElementById('myColor').value;
+			}
+
+			function switchImage(){
+				var url1 = "https://www.zoo.org.au/sites/default/files/styles/zv_carousel_large/public/platypus-underwater-animal-profile-web620.jpg?itok=9tMADBfM";
+				var url2 = "https://perthzoo.wa.gov.au/sites/default/files/animal/images/Koala_AH2Q1878_edbook.jpg"
+
+				var image = document.getElementById('pic');
+				
+				if(image.src == url1){
+					image.src = url2;
+				}else{
+					image.src = url1
+				}
+				// The Below text does the exact same thing as the if statement
+				//image.src = (image.src ==url1) ? url2 : url1;
+
+			}
+				*/
+			
+
+				function personButtonClicked(){
+					var name = document.GetElementById("name").value;
+					var age = document.getElementById("age").value;
+					var p = makePerson(name, age);
+
+
+
+					console.log( 'My name is '+ p.name + ,'I am age '+ p.age);
+				
+				}
+
+		</script>
+
+	</body>
+</html>
